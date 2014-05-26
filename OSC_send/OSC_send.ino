@@ -8,7 +8,7 @@ EthernetUDP Udp;
 //the Arduino's IP
 IPAddress ip(192, 168, 0, 111);
 //destination IP
-IPAddress outIp(192, 168, 0, 145);
+IPAddress outIp(192, 168, 0, 29);
 const unsigned int outPort = 9999;
 
  byte mac[] = {  
@@ -30,5 +30,5 @@ void loop(){
   Udp.endPacket(); // mark the end of the OSC Packet
   msg.empty(); // free space occupied by message
 
-  delay(20);
+  delay(100);
 }

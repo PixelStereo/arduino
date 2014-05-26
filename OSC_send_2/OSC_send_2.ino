@@ -14,7 +14,6 @@ const unsigned int outPort = 9999;
 void setup() {
   Ethernet.begin(mac,ip);
     Udp.begin(8888);
-
 }
 
 
@@ -22,11 +21,9 @@ void loop(){
   //the message wants an OSC address as first argument
   OSCMessage msg("/analog/0");
   msg.add(analogRead(0));
-
   Udp.beginPacket(outIp, outPort);
   msg.send(Udp); // send the bytes to the SLIP stream
   Udp.endPacket(); // mark the end of the OSC Packet
   msg.empty(); // free space occupied by message
-
   delay(20);
 }
