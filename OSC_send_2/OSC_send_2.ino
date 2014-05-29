@@ -6,11 +6,11 @@
 EthernetUDP Udp;
 
 IPAddress ip(192, 168, 0, 111);
-IPAddress outIp(192, 168, 0, 29);
+IPAddress outIp(192, 168, 0, 2);
 const unsigned int outPort = 9999;
 
  byte mac[] = {  
-  0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED };
+  0x90, 0xA2, 0xDA, 0x0D, 0x94, 0x73 };
 void setup() {
   Ethernet.begin(mac,ip);
     Udp.begin(8888);
