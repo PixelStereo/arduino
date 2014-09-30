@@ -5,8 +5,8 @@
 
 EthernetUDP Udp;
 
-IPAddress ip(192, 168, 0, 111);
-IPAddress outIp(192, 168, 0, 29);
+IPAddress ip(10, 0, 0, 10);
+IPAddress outIp(10, 0, 0, 4);
 const unsigned int outPort = 9999;
 
  byte mac[] = {  
