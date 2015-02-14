@@ -1,3 +1,6 @@
 [submodule "libraries/Artnet"]
 	path = libraries/Artnet
 	url = https://github.com/natcl/Artnet.git
+[submodule "libraries/Adafruit_NeoPixel"]
+	path = libraries/Adafruit_NeoPixel
+	url = https://github.com/adafruit/Adafruit_NeoPixel.git
