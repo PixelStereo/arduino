@@ -1,14 +1,6 @@
 arduino
 =======
-- [Checking out](#checking-out)
-- - [Checking out](#checking-out)
-
-<a name="download"/>
-#Download the examples and libraries
-
-
-<a name="checking-out"/>
-#Checking out the examples and libraries
+####Checking out the examples and libraries
 
 In order to download the examples, you first need to ensure that you have [Git](http://git-scm.com/) installed.
 
