@@ -18,10 +18,10 @@ Adafruit_NeoPixel leds = Adafruit_NeoPixel(numLeds, dataPin, NEO_GRB + NEO_KHZ80
 
 // Artnet settings
 Artnet artnet;
-const int startUniverse = 0; // CHANGE FOR YOUR SETUP most software this is 1, some software send out artnet first universe as 0.
+const int startUniverse = 1; // CHANGE FOR YOUR SETUP most software this is 1, some software send out artnet first universe as 0.
 
 // Check if we got all universes
-const int maxUniverses = numberOfChannels / 512 + ((numberOfChannels % 512) ? 1 : 0);
+const int maxUniverses = numberOfChannels / ((numberOfChannels % 512) ? 1 : 0);
 bool universesReceived[maxUniverses];
 bool sendFrame = 1;
 int previousDataLength = 0;
